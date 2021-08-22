@@ -21,3 +21,13 @@ p {
     border-radius: 20px;
     
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffd6d6;
+    padding: 20px;
+
+}
