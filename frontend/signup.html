@@ -25,23 +25,27 @@
     </header>
     <main>
       <p class="text-center">Bienvenue sur votre nouveau réseau social d'entreprise</p>
-      <p class="text-center">Connectez Vous !</p>
+      <p class="text-center">Inscrivez - Vous !</p>
       <div class="formulaire">
-        <!--<form>
+        <form id="signup" onsubmit="createUserAccount()">
           <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="username" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="username" aria-describedby="username">
+          </div>  
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
-          <button type="submit" class="btn btn-primary">Connexion</button>
-        </form>-->
+          <button type="submit" class="btn btn-primary">Inscription</button>
+        </form>
       </div>
-      <p class="text-center">Vous n'avez pas encore de compte ? <a href="#">Rejoignez nous</a></p>
+      <p class="text-center">Vous avez deja un compte ? <a href="login.html">Connectez - vous !</a></p>
       
-      <script src="js/index.js"></script>
+      <script src="js/signup.js"></script>
     </main>
     
   </body>
