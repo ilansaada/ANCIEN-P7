@@ -43,9 +43,9 @@ btnEnvoyerFormulaire.addEventListener("click", (Element) => {
     /*-----------------------------------envoi vers le server-----------------------------------*/
     const signupForm = document.querySelector("#signup");
     const formulaire = document.querySelector(".formulaire");
-    function createUserAccount() {
+    
         let signupFormData = new FormData(signupForm);
-        fetch("http://localhost:3000/api/auth", {
+        fetch("http://localhost:3000/api/auth/signup", {
             method: "POST",
             body: signupFormData,
         })
@@ -58,13 +58,13 @@ btnEnvoyerFormulaire.addEventListener("click", (Element) => {
         })
         .catch((error) => {
             formulaire.innerHTML = `<div class="alert alert-danger" role="alert">
-            Attention une erreur s'est produite : ${error}
+            une erreur s'est produite : ${error}
             </div>`;
         });
-    }
+    
   } else {
     document.querySelector("#erreur").textContent =
-        "Tout les champs doivent etre correctement remplis avant d'envoyer le formulaire  notamment : prenom,  nom et ville : pas de caractères spéciaux ";
+        "Tout les champs doivent etre correctement remplis avant d'envoyer le formulaire  notamment : Nom d'utilisateur pas de caractères spéciaux ni chiffres et email XXXX@email.com ";
   }
 });
 
